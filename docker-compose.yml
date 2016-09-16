@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  web:
+    build: .
+    image: my_web
+    ports: [ "8088:80" ]
+    environment:
+     - SYMFONY_ENV
+     - SYMFONY_DEBUG
